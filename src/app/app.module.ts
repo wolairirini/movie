@@ -11,6 +11,8 @@ import { ClassifyComponent } from './classify/classify.component';
 import { DetailComponent } from './detail/detail.component';
 import { MoreComponent } from './more/more.component';
 import { Code404Component } from './code404/code404.component';
+import { FooterComponent } from './footer/footer.component';
+import { LayoutComponent } from './layout/layout.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { Code404Component } from './code404/code404.component';
     ClassifyComponent,
     DetailComponent,
     MoreComponent,
-    Code404Component
+    Code404Component,
+    FooterComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
