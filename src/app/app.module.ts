@@ -13,6 +13,9 @@ import { MoreComponent } from './more/more.component';
 import { Code404Component } from './code404/code404.component';
 import { FooterComponent } from './footer/footer.component';
 import { LayoutComponent } from './layout/layout.component';
+import { JingcaidaoshiComponent } from './jingcaidaoshi/jingcaidaoshi.component';
+import { JingcaidaoshiService } from './service/jingcaidaoshi.service';
+import { HttpModule } from '@angular/http';
 
 
 @NgModule({
@@ -26,13 +29,15 @@ import { LayoutComponent } from './layout/layout.component';
     MoreComponent,
     Code404Component,
     FooterComponent,
-    LayoutComponent
+    LayoutComponent,
+    JingcaidaoshiComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [JingcaidaoshiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

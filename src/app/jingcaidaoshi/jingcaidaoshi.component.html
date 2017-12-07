@@ -1,0 +1,18 @@
+<div class="header">
+  <h2>精彩导视</h2>
+  <i class="iconfont icon-sousuo"></i>
+</div>
+<div class="main">
+  <div *ngFor="let movie of movies" >
+    <div class="top">
+      <h2>{{movie.shortVideoName}}</h2>
+      <video (click)="toggle($event)" type="video/mp4" poster={{movie.shortVideoImage}} src={{movie.shortVideoUrl}}>你的浏览器不支持video标签</video>
+      <div class="bot">
+        <div>{{movie.movieName}}</div>
+        <div><i class="iconfont icon-huahanAPP-icon--" ></i>{{movie.userPlayCount/10000 | number:"1.2-2"}}万次  <i class="iconfont icon-fenxiang"></i></div>
+        
+      </div>
+    </div>
+    
+  </div>
+</div>
