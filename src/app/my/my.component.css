@@ -1,0 +1,81 @@
+header{
+    width: 100%;
+    line-height: 3.90625rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: white;
+    background: #0e0e0e;
+}
+.myMain{
+    margin-top: 3.90625rem;
+    width: 100%;
+    height: 50rem;
+    background: #1c1c1c;
+}
+.login{
+    width: 100%;
+    height: 8.875rem;
+    margin-top:.46875rem; 
+    background: #222222;
+    color:white;
+}
+.login a{
+    float: left;
+}
+.login a span{
+    margin-top: 2.125rem;
+    margin-left: 1.09375rem;
+    display: inline-block;
+    color: white;
+    height: 4.875rem;
+    width: 4.875rem;
+    line-height: 4.875rem;
+    border-radius:2.4375rem;
+    background:  #9f9f9f;
+}
+.login a span i{
+    padding: .58125rem 1.34375rem ;
+    font-size: 2.34375rem !important;
+}
+.login  div{
+    line-height: 4.875rem;
+    margin-top: 2.125rem;
+    float: left;
+    margin-left:.9375rem ;
+    font-size: .78125rem;
+}
+.login  div a{
+    color: red
+}
+.login  b{
+    float: right;
+    margin-right:1.25rem;
+    padding-top:3.90625rem;  
+}
+.more{
+    height: 4.6875rem;
+    width: 100%;
+    background: #222222;
+    color: white;
+   
+}
+.more a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.more i{
+    padding: 0 1.25rem;
+    font-size: 1.4375rem;
+}
+.more p{
+    width: 90%;
+}
+.more p i{
+    float: right;
+}
