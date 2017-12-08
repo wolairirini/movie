@@ -1,4 +1,37 @@
-<p>
+<!-- <p>
   classify works!
   <a [routerLink] = "['/detail']">查看详情</a>
-</p>
+</p> -->
+
+
+
+<div class="channel">
+  <header class="ctitle">
+    <p class="ctxt">分类</p>
+    <div class="search">
+      <i class="iconfont icon-sousuo sousuo"></i>
+    </div>
+  </header>
+
+  <div class="content">
+    <div *ngFor="let cdetail of classdetail" >
+      <a class="cstyle" [routerLink]="['/classifydetail']">
+        <img class="cstyleimg" [src]="cdetail.categoryImage" alt="">
+        <span>{{cdetail.categoryName}}</span>
+      </a>
+    </div>
+    <!-- <a class="cstyle" [routerLink]="['/classifydetail']">
+      <img class="cstyleimg" src="http://qn.image.vcinema.com.cn/20171201152458-1574386385.png" alt="">
+    </a>
+    <a class="cstyle" [routerLink]="['/classifydetail']">
+      <img class="cstyleimg" src="http://qn.image.vcinema.com.cn/20171201150439-1187093567.png" alt="">
+    </a>
+    <a class="cstyle" [routerLink]="['/classifydetail']">
+      <img class="cstyleimg" src="http://qn.image.vcinema.com.cn/20171201151005-161641331.png" alt="">
+    </a>
+    <a class="cstyle" [routerLink]="['/classifydetail']">
+      <img class="cstyleimg" src="http://qn.image.vcinema.com.cn/20171201151248-2117425282.png" alt="">
+    </a> -->
+  </div>
+
+</div>

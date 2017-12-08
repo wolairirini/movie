@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {HttpModule} from "@angular/http";
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -13,6 +14,8 @@ import { MoreComponent } from './more/more.component';
 import { Code404Component } from './code404/code404.component';
 import { FooterComponent } from './footer/footer.component';
 import { LayoutComponent } from './layout/layout.component';
+import { ClassifydetailComponent } from './classifydetail/classifydetail.component';
+import { ClassifydetailService } from './service/classifydetail.service';
 
 
 @NgModule({
@@ -26,13 +29,15 @@ import { LayoutComponent } from './layout/layout.component';
     MoreComponent,
     Code404Component,
     FooterComponent,
-    LayoutComponent
+    LayoutComponent,
+    ClassifydetailComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [ClassifydetailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

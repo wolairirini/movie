@@ -8,6 +8,7 @@ import { DetailComponent } from './detail/detail.component';
 import { MoreComponent } from './more/more.component';
 import { Code404Component } from './code404/code404.component';
 import { LayoutComponent } from './layout/layout.component';
+import { ClassifydetailComponent } from './classifydetail/classifydetail.component';
 const routes: Routes = [
     {path:'',component:LayoutComponent,
       children:[
@@ -18,6 +19,7 @@ const routes: Routes = [
       ]
     },
     {path:"more",component:MoreComponent},//主页跳更多
+    {path:"classifydetail",component:ClassifydetailComponent},//分类跳分类详情
     {path:"detail",component:DetailComponent}, //观看详情页
 
     {path:"**",component:Code404Component}//404页面
