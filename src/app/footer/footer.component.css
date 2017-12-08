@@ -1,11 +1,12 @@
 
 footer{
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     background: #0e0e0e;
     height:4.21875rem;
+    z-index: 99;
 }
 a{
     display: inline-block;
@@ -21,4 +22,7 @@ i{
 }
  a span{
    font-size: .78125rem;
+}
+.active{
+    color: #f42c2c;
 }
