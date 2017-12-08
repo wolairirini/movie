@@ -19,7 +19,7 @@ const routes: Routes = [
       ]
     },
     {path:"more",component:MoreComponent},//主页跳更多
-    {path:"classifydetail",component:ClassifydetailComponent},//分类跳分类详情
+    {path:"classifydetail/:categoryId",component:ClassifydetailComponent},//分类跳分类详情
     {path:"detail",component:DetailComponent}, //观看详情页
 
     {path:"**",component:Code404Component}//404页面

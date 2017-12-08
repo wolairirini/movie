@@ -15,7 +15,7 @@
 
   <div class="content">
     <div *ngFor="let cdetail of classdetail" >
-      <a class="cstyle" [routerLink]="['/classifydetail']">
+      <a class="cstyle" [routerLink]="['/classifydetail',cdetail.categoryId]">
         <img class="cstyleimg" [src]="cdetail.categoryImage" alt="">
         <span>{{cdetail.categoryName}}</span>
       </a>
