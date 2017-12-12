@@ -16,9 +16,71 @@
     text-align: center;
     z-index: 9;
 }
+.ctitle .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: .9375rem;
+    
+}
+.ctitle .back .goback{
+    position: absolute;
+    transform: rotateY(180deg);
+}
 .ctitle .search{
     position: absolute;
     top: 0;
     right: 0;
     margin-right: .9375rem;
+}
+
+/* 排序列表 */
+.ctitle .search .sorts{
+    background: #3b3b3b;
+    list-style:none;
+    position: absolute;
+    right: 0;
+    left: -3.875rem;
+    font-size: .875rem;
+
+}
+
+.ctitle .search .sorts li:nth-of-type(2){
+    border-top: .03125rem solid #242424;
+    border-bottom: .03125rem solid #242424;
+}
+
+/* 主要内容 */
+.cdcontent{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    background: #1c1c1c;
+    top: 3.125rem;
+    box-sizing: border-box;
+    padding: .3125rem 1.25rem;
+}
+
+.cdcontent .cdiv{
+    width: 30%;
+    margin-top: .9375rem;
+}
+
+/* 每个A标签 */
+.cdcontent .cdmovie{
+    display: block;
+    width: 100%;
+    
+}
+
+.cdcontent .cdmovie .cdimg{
+    width: 100%;
+    height: 9.375rem;
+}
+
+.cdcontent .cdmovie p{
+    font-size: .375rem;
+    color: white;
 }

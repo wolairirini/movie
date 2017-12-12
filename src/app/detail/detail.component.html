@@ -1,3 +1,31 @@
-<p>
-  detail works!
-</p>
+<div class="moviebox" >
+  <!-- 观看电影 -->
+  <div class="movie" >
+    <div class="back" (click)="goback()" >
+      <i class="iconfont icon-mjiantou goback"></i>
+    </div>
+    <div class="mvideo">
+      <img class="playvideo" src="http://qn.image.vcinema.com.cn/20170712165855-572091300.png" alt="">
+    </div>
+  </div>
+
+  <!-- 电影介绍 -->
+  <div class="moviebotom">
+    <div class="movieintroduce" >
+      <p class="movietitle">斯大林格勒</p>
+
+      <div class="where" >
+          <p>俄罗斯·2013</p>
+          <div [class]="introducebtn" (click)="lookintroduce()" >
+            <i class="iconfont icon-mjiantou"></i>
+          </div>
+      </div>
+
+      <div class="downandcollect" >
+          
+          <i class="iconfont icon-shoucang ww"></i>
+          <i class="iconfont icon-lixianhuancun ww "></i>
+      </div>
+    </div>
+  </div>
+</div>

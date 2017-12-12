@@ -2,9 +2,37 @@
 
 <div class="channeldetail">
   <header class="ctitle">
-    <p class="ctxt">战争</p>
-    <div class="search">
+    <div class="back" (click)="goback()" >
+      <i class="iconfont icon-mjiantou goback"></i>
+    </div>
+    <p class="ctxt">{{categoryName}}</p>
+    <div class="search"  (click)="sort()" >
       <p class=" sousuo">排序</p>
+      <ul class="sorts" [hidden]="hidde" >
+          <!-- <a [routerLink]="['/classifydetail',cId]" >最新上线</a> -->
+        <li (click)="gosort(1)" >最新上线</li>
+        <li (click)="gosort(2)" >流行热度</li>
+        <li (click)="gosort(3)" >IMDb评分</li>
+      </ul>
     </div>
   </header>
+
+  <!-- 主要内容 -->
+  <div class="cdcontent" >
+    <div class="cdiv" *ngFor="let cdetails of classdetails " >
+      <a class="cdmovie" [routerLink]="['/detail']" >
+        <img class="cdimg" [src]="cdetails.movieImageUrl" alt="">
+        <p>{{cdetails.name}}</p>
+      </a>
+    </div>
+
+    <!-- <div class="cdiv">
+      <a class="cdmovie" href="#" >
+        <img class="cdimg" src="http://qn.image.vcinema.com.cn/20170724101424-583918753.png" alt="">
+        <p>终极奇兵</p>
+      </a>
+    </div> -->
+    
+  </div>
+
 </div>

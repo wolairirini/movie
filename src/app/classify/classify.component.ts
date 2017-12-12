@@ -19,8 +19,8 @@ export class ClassifyComponent implements OnInit {
     .subscribe(
       (product)=>{
         this.classdetail = product;
+        // 传过来数据转化成json格式
         this.classdetail=JSON.parse(this.classdetail._body)
-        console.log(this.classdetail);
       }
     )
   }

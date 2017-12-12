@@ -16,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
 import { LayoutComponent } from './layout/layout.component';
 import { ClassifydetailComponent } from './classifydetail/classifydetail.component';
 import { ClassifydetailService } from './service/classifydetail.service';
+import { DetailsComponent } from './details/details.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { ClassifydetailService } from './service/classifydetail.service';
     Code404Component,
     FooterComponent,
     LayoutComponent,
-    ClassifydetailComponent
+    ClassifydetailComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
